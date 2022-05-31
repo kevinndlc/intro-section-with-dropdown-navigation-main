@@ -388,7 +388,16 @@ button {
 }
 
 .footer {
-  display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  font-size: 0.875rem;
+  text-align: center;
+
+  a {
+    color: #7669ea;
+  }
 }
 
 @keyframes slideFromRight {
