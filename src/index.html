@@ -1,35 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="style.scss">
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.scss" />
 
-  Login
-  Register
+    <script src="./script.ts" type="module"></script>
+  </head>
+  <body>
+    <header class="header flex items-center">
+      <img src="./assets/images/logo.svg" alt="logo" />
+      <nav class="navigation flex items-center">
+        <ul class="flex items-center">
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="auth-links">Login Register</div>
+      </nav>
+      <button class="mobile-menu-toggler flex items-center justify-center">
+        <img src="./assets/images/icon-menu.svg" alt="Open Mobile Menu" />
+      </button>
+      <nav class="mobile-menu">
+        <div class="backdrop"></div>
+        <div class="menu">
+          <button class="mobile-menu-toggler flex items-center justify-center">
+            <img
+              src="./assets/images/icon-close-menu.svg"
+              alt="Close Mobile Menu"
+            />
+          </button>
+          <ul>
+            <li>
+              <button class="expand-btn">
+                Features
+                <img src="./assets/images/icon-arrow-down.svg" alt="">
+                <img src="./assets/images/icon-arrow-up.svg" alt="">
+              </button>
+              <ul class="submenu">
+                <li><a href="#"><img src="./assets/images/icon-todo.svg" alt="">Todo List</a></li>
+                <li><a href="#"><img src="./assets/images/icon-calendar.svg" alt="">Calendar</a></li>
+                <li><a href="#"><img src="./assets/images/icon-reminders.svg" alt="">Reminders</a></li>
+                <li><a href="#"><img src="./assets/images/icon-planning.svg" alt="">Planning</a></li>
+              </ul>
+            </li>
+            <li>
+              <button class="expand-btn">
+                Company
+                <img src="./assets/images/icon-arrow-down.svg" alt="">
+                <img src="./assets/images/icon-arrow-up.svg" alt="">
+              </button>
+              <ul class="submenu">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="auth-links">
+            <a href="#">Login</a>
+            <a href="#" class="btn btn--outline">Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  Make remote work
+    <main class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Make remote work</h1>
+        <p class="hero__lead">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="hero__cta btn btn--primary">Learn more</a>
+        <div class="hero__client-logos">
+          <img src="./assets/images/client-databiz.svg" alt="Databiz logo" />
+          <img
+            src="./assets/images/client-audiophile.svg"
+            alt="Audiophile logo"
+          />
+          <img src="./assets/images/client-meet.svg" alt="Meet logo" />
+          <img src="./assets/images/client-maker.svg" alt="Maker logo" />
+        </div>
+      </div>
+      <div class="hero__img">
+        <picture>
+          <source
+            media="(min-width: 35rem)"
+            srcset="./assets/images/image-hero-desktop.png"
+            type="image/png"
+          />
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+          <img
+            src="./assets/images/image-hero-mobile.png"
+            alt="Man holding his laptop"
+          />
+        </picture>
+      </div>
+    </main>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="footer">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
 </html>

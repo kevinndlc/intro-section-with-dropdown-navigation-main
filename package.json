@@ -2,7 +2,7 @@
   "name": "intro-section-with-dropdown-navigation-main",
   "description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
   "version": "1.0.0",
-  "source": "index.js",
+  "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.6.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0"
   }
 }
