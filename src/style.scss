@@ -377,7 +377,7 @@ button {
     }
 
     @include md {
-      padding: 0.875rem 1.875rem;
+      padding: 0.75rem 1.75rem;
       margin-bottom: 6.75rem;
     }
   }
@@ -386,6 +386,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include md {
+      max-width: 478px;
+    }
   }
 }
 
