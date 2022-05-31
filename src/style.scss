@@ -117,13 +117,13 @@ button {
 .header {
   padding: 1rem;
   justify-content: space-between;
-  position: absolute;
-  top: 0;
-  width: 100%;
   
   @include md {
     justify-content: start;
     padding: 1.25rem 2.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 
   .navigation {
